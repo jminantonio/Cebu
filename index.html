@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Set your doctype, so the browser knows what coding language this is -->
+<html lang="en"> <!-- tell the browser where the code is and what speaking language this is -->
+
+<head>
+    <meta charset="UTF-8"> <!-- what character set are you using? -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- setting up responsive design (see next week!) -->
+    <title>Urban Poor Map</title> <!-- Call your map whatever title you want -->
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+    <h1 class="title">The Struggle of the Urban Poor in the Philippines</h1>
+    <h3 class="author">Map Produced by Joaquin Antonio. 2025</h3>
+    <h3 class="sources">
+        Interviews with the People of:<br>
+        Labogon, Pakna'an, Sudtunggan, Tipolo, Pasil, and Carbon Market.<br>
+        Many thanks to the activists and organizers from Cebu for guiding me and my colleagues!
+    </h3>
+
+    <div class="legend">
+        <h2>Legend</h2>
+        <div class="legend_items" id="locations">
+            <div class="item" data-key='bagong'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Bagong Silangan</span>
+            </div>
+            <div class="item" data-key='labogonhome'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Labogan</span>
+            </div>
+            <div class="item" data-key='paknaanriver'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Pakna'an</span>
+            </div>
+            <div class="item" data-key='sudtungganapartments'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Sudtunggan</span>
+            </div>
+            <div class="item" data-key='tipolo'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Tipolo</span>
+            </div>
+            <div class="item" data-key='pasil'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Pasil</span>
+            </div>
+            <div class="item" data-key='carbon'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Carbon Market</span>
+            </div>
+            <div class="item" data-key='edca'><img src="https://media.istockphoto.com/id/2150581795/vector/vector-illustration-of-a-hut-with-a-thatched-roof-on-stilts.jpg?s=612x612&w=0&k=20&c=yWz6uv-Mg8GkXdwxMhJ2QSb62IqbPKeeA8HtgNYDiGQ=" alt="EDCA icon">
+                <span>Mactan</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js'></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
